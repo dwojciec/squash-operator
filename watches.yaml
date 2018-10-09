@@ -1,0 +1,5 @@
+---
+- version: v1alpha1
+  group: squash.example.com
+  kind: Squash
+  role: /opt/ansible/roles/Squash

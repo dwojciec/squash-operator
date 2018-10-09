@@ -1,0 +1,4 @@
+apiVersion: "squash.example.com/v1alpha1"
+kind: "Squash"
+metadata:
+  name: "example"
