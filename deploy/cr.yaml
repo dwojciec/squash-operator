@@ -1,4 +1,5 @@
-apiVersion: "squash.example.com/v1alpha1"
+apiVersion: "app.example.com/v1alpha1"
 kind: "Squash"
 metadata:
-  name: "example"
+  name: "squashtest"
+spec:

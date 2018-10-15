@@ -1,0 +1,11 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - debug:
+      var: _app_example_com_squash
+  - import_role:
+      name: "Squash"
+    when: sentinel is not defined
+  - debug:
+      msg: "sentinel value '{{ sentinel }}' detected, this is a finalizer"
+    when: sentinel is defined

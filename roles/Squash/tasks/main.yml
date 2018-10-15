@@ -1,2 +1,32 @@
 ---
-# tasks file for Squash
+# tasks file for squash-server
+- name: start squash-server
+  k8s:
+    definition:
+      kind: Deployment
+      apiVersion: apps/v1
+      metadata:
+        name: squash-server
+        namespace: '{{ meta.namespace }}'
+      spec:
+        selector:
+          matchLabels:
+            app: squash-server
+        template:
+          metadata:
+            labels:
+              app: squash-server
+          spec:
+            containers:
+            - name: squash-server
+              image: soloio/squash-server:v0.2.1
+
+- name: start squash-client
+  k8s:
+    state: present
+    definition: "{{ lookup('template', '/opt/ansible/k8s/squash-client.yml') | from_yaml  }}"
+
+- name: create squash-server service 
+  k8s:
+    state: present
+    definition: "{{ lookup('template', '/opt/ansible/k8s/squash-server-svc.yml') | from_yaml  }}"

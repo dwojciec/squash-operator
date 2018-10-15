@@ -2,4 +2,6 @@
 # defaults file for busybox
 meta:
   namespace: operator-squash
-  name: squash-debugger
+  name: test
+message: hello world
+echo_delay: 10

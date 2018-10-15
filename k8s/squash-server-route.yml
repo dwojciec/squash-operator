@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Route
+metadata:
+annotations:
+  openshift.io/host.generated: "true"
+  name: squash-server
+  namespace: '{{ meta.namespace }}'
+spec:
+  port:
+    targetPort: http-squash-api
+  to:
+    kind: Service
+    name: squash-server
+    weight: 100 
+  wildcardPolicy: None  

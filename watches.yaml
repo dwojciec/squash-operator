@@ -1,5 +1,9 @@
 ---
 - version: v1alpha1
-  group: squash.example.com
+  group: app.example.com
   kind: Squash
-  role: /opt/ansible/roles/Squash
+  playbook: /opt/ansible/playbook.yaml
+  finalizer:
+    name: finalizer.app.example.com
+    vars:
+      sentinel: finalizer_running

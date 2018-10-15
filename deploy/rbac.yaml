@@ -4,7 +4,7 @@ metadata:
   name: squash-operator
 rules:
 - apiGroups:
-  - squash.example.com
+  - app.example.com
   resources:
   - "*"
   verbs:
@@ -40,7 +40,7 @@ metadata:
 subjects:
 - kind: ServiceAccount
   name: default
-  namespace: default
+  namespace: operator-squash
 roleRef:
   kind: ClusterRole
   name: squash-operator
