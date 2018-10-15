@@ -1,7 +1,0 @@
----
-# defaults file for busybox
-meta:
-  namespace: operator-squash
-  name: test
-message: hello world
-echo_delay: 10
