@@ -197,7 +197,7 @@ I decided to use the **Playbook** option by specifying a `playbook.yaml` file in
       sentinel: finalizer_running
 ```
 
-###Build and run the operator
+### Build and run the operator
 Before running the squash operator, Kubernetes needs to know about the new CRD the operator will be watching.
 
 ### Deploy the Custom Ressource Definition:
