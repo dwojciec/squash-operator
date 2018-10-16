@@ -14,7 +14,8 @@ An Operator is a Kubernetes controller that deploys and manages application’s 
 
 
 Based on the [User Guide][User Guide]  which walks through an example of building a simple memcached-operator powered by Ansible tools and librairies provided by the Operator SDK I decided to build my ***Squash Operator***. 
-I'm explaining here how to create an ansible Operator but if you want just to test the Squash Operator you can clone the project and go to the [Deploy the squash-operator](https://github.com/dwojciec/squash-operator#deploy-the-squash-operator) section
+
+I'm explaining here how to create an ansible Operator but if you want just to test the `Squash Operator` you can clone the project and go to the [Deploy the squash-operator](https://github.com/dwojciec/squash-operator#deploy-the-squash-operator) section
 
 
 ## Create a new operator
