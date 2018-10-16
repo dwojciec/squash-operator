@@ -1,11 +1,13 @@
 <h1 align="center">
   <br>
-  Squash Ansible Operator
+  Squash Operator
 </h1>
 
-### Squash Ansible Operator
+### Overview
 
-An Operator is a Kubernetes controller that deploys and manages application’s resources and services in Kubernetes. In Kubernetes each of your application’s resources can be defined by a custom resource definition (CRD). CRD’s uniquely identifies your applications custom resources by its Group, Version and Kind in a Kubernetes cluster. Once the CRD’s have been created, you would then create an instance of the custom resource, or CR, with a unique name.
+An Operator is a Kubernetes `controller` that deploys and manages application’s resources and services in Kubernetes. 
+
+In Kubernetes each of your application’s resources can be defined by a **C**ustom **R**esource **D**efinition (**CRD**). **CRD**’s uniquely identifies your applications custom resources by its `Group`, `Version` and `Kind` in a Kubernetes cluster. Once the CRD’s have been created, you would then create an instance of the **C**ustom **R**esource, or **CR**, with a unique name.
 
 
 <h1 align="center">
@@ -13,7 +15,7 @@ An Operator is a Kubernetes controller that deploys and manages application’s 
 </h1>
 
 
-Based on the [User Guide][User Guide]  which walks through an example of building a simple memcached-operator powered by Ansible tools and librairies provided by the Operator SDK I decided to build my own ***Squash Operator***. 
+Based on the [User Guide][User Guide]  which walks through an example of building a simple memcached-operator powered by Ansible tools and librairies provided by the Operator SDK I decided to build my own ***Squash Ansible Operator***. 
 
 I'm explaining here how to create an ansible Operator but if you want just to test the `Squash Operator` you can clone the project and go to the [Deploy the squash-operator](https://github.com/dwojciec/squash-operator#deploy-the-squash-operator) section
 
