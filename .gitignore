@@ -1,0 +1,7 @@
+.DS_Store
+# Binaries for programs and plugins
+
+# Test binary, build with `go test -c`
+*.test
+
+*.out
