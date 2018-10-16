@@ -242,7 +242,7 @@ $ kubectl create -f deploy/sa.yaml
 * [Memcached Ansible Operator Demo](https://opensource.com/article/18/10/ansible-operators-kubernetes)
 
 ## Squash tool
-* [SQUASH: The debugger for microservices ] (https://github.com/solo-io/squash)
+* [SQUASH - The debugger for microservices](https://github.com/solo-io/squash)
 
  [User Guide]:https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
  [k8s]:https://docs.ansible.com/ansible/2.6/modules/k8s_module.html
