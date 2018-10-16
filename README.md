@@ -240,6 +240,11 @@ $ kubectl create -f deploy/operator.yaml
 $ kubectl create -f deploy/sa.yaml
 
 ```
+Before testing squash you have to run :
+```
+ oc adm policy add-scc-to-user privileged -z squash-client
+ oc expose svc squash-server
+```
 
 ## References to go further:
 * [An introduction to Ansible Operators in Kubernetes](https://opensource.com/article/18/10/ansible-operators-kubernetes)
