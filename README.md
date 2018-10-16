@@ -149,7 +149,7 @@ I updated the empty file `roles/Squash/tasks/main.yaml` with :
 
 This Ansible task is creating a Kubernetes deplyment using [k8s][k8s] module. The [k8s][k8s] Ansible module allows you to easily interact with the kubernetes resources idempotently. 
 
-###Update of the Dockerfile (tmp/build/Dockerfile)
+### Update of the Dockerfile (tmp/build/Dockerfile)
 
 Inside the `roles/Squash/tasks/main.yaml` file I’m using multiples external files (template), like '/opt/ansible/k8s/squash-server-svc.yml'  and to consume this files I updated the Dockerfile to add them.
 From ...`squash-operator/tmp/build/Dockerfile`
@@ -171,7 +171,7 @@ COPY playbook.yaml ${HOME}/playbook.yaml
 COPY watches.yaml ${HOME}/watches.yaml
 ```
 
-###Update of  the watches.yaml
+### Update of  the watches.yaml
 
 By default the operator SDK generated `watches.yaml` file watches Squash resource events and executes Ansible Role Squash. 
 
@@ -200,13 +200,13 @@ I decided to use the **Playbook** option by specifying a `playbook.yaml` file in
 ###Build and run the operator
 Before running the squash operator, Kubernetes needs to know about the new CRD the operator will be watching.
 
-###Deploy the Custom Ressource Definition:
+### Deploy the Custom Ressource Definition:
 ```
 $ oc new-project operator-squash
 $ kubectl create -f deploy/crd.yaml
 ```
 
-###Build the squash-operator image and push it to a registry:
+### Build the squash-operator image and push it to a registry:
 ```
 
 $ $GOPATH/bin/operator-sdk build quay.io/dwojciec/squash-operator:v0.0.1
@@ -229,7 +229,7 @@ spec:
           ports:
 ```
 
-###Deploy the squash-operator:
+### Deploy the squash-operator:
 ```
 $ kubectl create -f deploy/rbac.yaml
 $ kubectl create -f deploy/operator.yaml
