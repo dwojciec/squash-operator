@@ -256,7 +256,3 @@ Before testing squash you have to run :
  [User Guide]:https://github.com/operator-framework/operator-sdk/blob/master/doc/ansible/user-guide.md
  [k8s]:https://docs.ansible.com/ansible/2.6/modules/k8s_module.html
  [operatorsdk]:https://github.com/operator-framework/operator-sdk
- 
- 
- Test sync github 1
- 
