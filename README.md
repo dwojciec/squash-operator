@@ -257,3 +257,6 @@ Before testing squash you have to run :
  [k8s]:https://docs.ansible.com/ansible/2.6/modules/k8s_module.html
  [operatorsdk]:https://github.com/operator-framework/operator-sdk
  
+ 
+ 
+ 
