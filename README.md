@@ -258,5 +258,5 @@ Before testing squash you have to run :
  [operatorsdk]:https://github.com/operator-framework/operator-sdk
  
  
- 
+ Test sync github 1
  
